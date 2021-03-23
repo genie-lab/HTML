@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+* { box-sizing: border-box; padding: 0%; }
+
+.container  {
+    width: 1200px;
+    margin: 0 auto;
+}
+.container::before, .container::after  {
+    content:""; 
+    clear:both; 
+    display:block;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif !important;
+    background: #eee;
+}
+
+
+.header {
+    padding:5%;
+    text-align: center;
+    background: rgb(118, 118, 118);
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.header h1 {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.0em;
+    color: #fff;
+}
+
+.header p {
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1.0em;
+    color: #fff;
+}
+
+.nav {
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(49, 69, 250);
+}
+
+.nav a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+    width: 75%;
+}
+
+.right {
+    float: left;
+    width: 25%;
+    background-color: #eee;
+    padding-left: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+card > .fakeimg {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background:  rgb(49, 69, 250);
+    margin-top: 20px;
+    color: rgb(201, 203, 236);
+}
+
+@media ( max-width: 600px ) {
+    .container {
+      width: auto;
+    }
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: "Noto Sans KR", sans-serif !important;
+        background: #eee;
+    }
+
+    .header {
+        padding:3%;
+        text-align: center;
+        background: rgb(118, 118, 118);
+        background-image: url("./res_img/header.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .header h1 {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.0em;
+        color: #fff;
+    }
+
+    .header p {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 1.0em;
+        color: #fff;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 0;
+    }
+    .nav a {
+        float: none;
+        display: inline-block;
+    }
+    
+  }
